@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "304643738579",
+    "project_id": "pet-care-1b11b",
+    "storage_bucket": "pet-care-1b11b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304643738579:android:60793a0b90bfa3fc96bd26",
+        "android_client_info": {
+          "package_name": "com.example.furfriend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlCyOlmDgAM6OTftkPMmkqr6L4vS1sXOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304643738579:android:aef080eb5432e5fe96bd26",
+        "android_client_info": {
+          "package_name": "com.example.pet_care"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlCyOlmDgAM6OTftkPMmkqr6L4vS1sXOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
