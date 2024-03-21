@@ -46,71 +46,80 @@ class _UserProfileState extends State<UserProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.only(
-            left: 20,
-            right: 20,
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/background.jpg'),
+            fit: BoxFit.cover, // You can adjust the image fit as needed
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              TextField(
-                controller: _nameEditingController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Name',
-                ),
-              ),
-              SizedBox(height: 20.0),
-              TextField(
-                controller: _emailEditingController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Email',
-                ),
-              ),
-              SizedBox(height: 20.0),
-              TextField(
-                controller: _numberEditingController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Number',
-                ),
-              ),
-              SizedBox(height: 20.0),
-              TextField(
-                controller: _passwordEditingController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Password',
-                ),
-              ),
-              SizedBox(height: 20.0),
-              TextField(
-                controller: _cpasswordEditingController,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'C Password',
-                ),
-              ),
-              SizedBox(height: 20.0),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 18, 76, 135),
-                ),
-                onPressed: _addItem,
-                child: Text(
-                  'Register',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+        ),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.only(
+              left: 20,
+              right: 20,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(height: 380.0),
+                TextField(
+                  controller: _nameEditingController,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Name',
                   ),
                 ),
-              ),
-            ],
+                SizedBox(height: 20.0),
+                TextField(
+                  controller: _emailEditingController,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Email',
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                TextField(
+                  controller: _numberEditingController,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Number',
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                TextField(
+                  controller: _passwordEditingController,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Password',
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                TextField(
+                  controller: _cpasswordEditingController,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'C Password',
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 18, 76, 135),
+                  ),
+                  onPressed: _addItem,
+                  child: Text(
+                    'Register',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.0),
+              ],
+            ),
           ),
         ),
       ),
