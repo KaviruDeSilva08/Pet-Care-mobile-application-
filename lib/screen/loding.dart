@@ -63,7 +63,7 @@ class _LodingState extends State<Loding> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/logo.png',
+                'images/mylogo.png',
                 width: 250,
                 height: 250,
               ),

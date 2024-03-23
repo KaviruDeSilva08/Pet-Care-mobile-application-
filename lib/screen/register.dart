@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_care/screen/dashboard.dart';
-import 'package:pet_care/screen/petprofile.dart';
+//import 'package:pet_care/screen/petprofile.dart';
 import 'package:pet_care/screen/userprofile.dart';
 
 class Register extends StatelessWidget {
@@ -12,7 +12,7 @@ class Register extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/background.jpg'),
+            image: AssetImage('images/background.jpg'),
             fit: BoxFit.cover, // You can adjust the image fit as needed
           ),
         ),
@@ -22,12 +22,15 @@ class Register extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(
-                    left: 20,
-                    top: 50,
+                    left: 10,
+                    top: 40,
                   ),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.transparent,
+                      shadowColor: Colors.transparent,
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 15.0),
                     ),
                     onPressed: () {
                       Navigator.push(
@@ -37,6 +40,7 @@ class Register extends StatelessWidget {
                       );
                     },
                     child: Icon(
+                      size: 40,
                       Icons.arrow_back,
                       color: Colors.white,
                     ),
@@ -45,58 +49,63 @@ class Register extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 80,
+              height: 100,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  'assets/images/logo.png',
+                  'images/mylogo.png',
                   width: 300,
-                  height: 300,
                 ),
               ],
+            ),
+            SizedBox(
+              height: 50,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromARGB(255, 18, 76, 135),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const UserProfile()),
-                      );
-                    },
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.man,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Create User Profile',
-                          style: TextStyle(
+                SizedBox(
+                  height: 50,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 18, 76, 135),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const UserProfile()),
+                        );
+                      },
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.man,
                             color: Colors.white,
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold,
                           ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.arrow_circle_right,
-                          color: Colors.white,
-                        ),
-                      ],
-                    )),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Create User Profile',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 23,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Icons.arrow_circle_right,
+                            color: Colors.white,
+                          ),
+                        ],
+                      )),
+                ),
               ],
             ),
             SizedBox(
@@ -105,43 +114,46 @@ class Register extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromARGB(255, 18, 76, 135),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const UserProfile()),
-                      );
-                    },
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.pets,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Create User Profile',
-                          style: TextStyle(
+                SizedBox(
+                  height: 50,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 18, 76, 135),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const UserProfile()),
+                        );
+                      },
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.pets,
                             color: Colors.white,
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold,
                           ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.arrow_circle_right,
-                          color: Colors.white,
-                        ),
-                      ],
-                    )),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Create User Profile',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 23,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Icons.arrow_circle_right,
+                            color: Colors.white,
+                          ),
+                        ],
+                      )),
+                ),
               ],
             ),
           ],
