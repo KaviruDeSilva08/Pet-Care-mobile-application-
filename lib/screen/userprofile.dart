@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:pet_care/screen/register.dart';
+import 'package:pet_care/screen/usersuccess.dart';
 
 class UserProfile extends StatefulWidget {
-  const UserProfile({super.key});
+  const UserProfile({super.key, required String title});
 
   @override
   _UserProfileState createState() => _UserProfileState();
@@ -42,6 +43,11 @@ class _UserProfileState extends State<UserProfile> {
     _numberEditingController.clear();
     _passwordEditingController.clear();
     _cpasswordEditingController.clear();
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const UserSuccess()),
+    );
   }
 
   @override

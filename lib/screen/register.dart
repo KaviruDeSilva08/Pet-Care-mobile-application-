@@ -76,7 +76,9 @@ class Register extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const UserProfile()),
+                              builder: (context) => const UserProfile(
+                                    title: 'GFG',
+                                  )),
                         );
                       },
                       child: Row(
