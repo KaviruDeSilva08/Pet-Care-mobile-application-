@@ -54,7 +54,7 @@ class _LodingState extends State<Loding> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/images/background.jpg'), // Replace with your background image path
+                'images/background.jpg'), // Replace with your background image path
             fit: BoxFit.cover,
           ),
         ),
@@ -64,8 +64,8 @@ class _LodingState extends State<Loding> {
             children: [
               Image.asset(
                 'images/mylogo.png',
-                width: 250,
-                height: 250,
+                width: 300,
+                height: 300,
               ),
               SizedBox(
                   height:

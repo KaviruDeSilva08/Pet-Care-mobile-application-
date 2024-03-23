@@ -38,7 +38,7 @@ class _SplashState extends State<Splash> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/images/background.jpg'), // Replace with your background image path
+                'images/background.jpg'), // Replace with your background image path
             fit: BoxFit.cover,
           ),
         ),

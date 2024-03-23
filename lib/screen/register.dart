@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_care/screen/dashboard.dart';
-//import 'package:pet_care/screen/petprofile.dart';
+import 'package:pet_care/screen/petprofile.dart';
 import 'package:pet_care/screen/userprofile.dart';
 
 class Register extends StatelessWidget {
@@ -124,7 +124,7 @@ class Register extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const UserProfile()),
+                              builder: (context) => const PetProfile()),
                         );
                       },
                       child: Row(
@@ -137,7 +137,7 @@ class Register extends StatelessWidget {
                             width: 10,
                           ),
                           Text(
-                            'Create User Profile',
+                            'Create Pet Profile',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 23,
