@@ -124,10 +124,12 @@ class _UserProfileState extends State<UserProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
                         Icons.man,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "User Name",
                         style: TextStyle(
@@ -157,7 +159,7 @@ class _UserProfileState extends State<UserProfile> {
                         fillColor: Colors.blue[50],
                         hintText: 'Enter User Name',
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -178,10 +180,12 @@ class _UserProfileState extends State<UserProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.email,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Email",
                         style: TextStyle(
@@ -211,7 +215,7 @@ class _UserProfileState extends State<UserProfile> {
                         fillColor: Colors.blue[50],
                         hintText: 'Enter Email',
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -232,10 +236,12 @@ class _UserProfileState extends State<UserProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.call,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Telephone Number",
                         style: TextStyle(
@@ -265,7 +271,7 @@ class _UserProfileState extends State<UserProfile> {
                         fillColor: Colors.blue[50],
                         hintText: 'Enter Telephone Number',
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -286,10 +292,12 @@ class _UserProfileState extends State<UserProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.lock,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Password",
                         style: TextStyle(
@@ -319,7 +327,7 @@ class _UserProfileState extends State<UserProfile> {
                         fillColor: Colors.blue[50],
                         hintText: 'Enter Password',
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -340,10 +348,12 @@ class _UserProfileState extends State<UserProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.lock,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Confirm Password",
                         style: TextStyle(
@@ -373,7 +383,7 @@ class _UserProfileState extends State<UserProfile> {
                         fillColor: Colors.blue[50],
                         hintText: 'Confirm Your Password',
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25.0, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),

@@ -126,10 +126,12 @@ class _PetProfileState extends State<PetProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.pets,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Pet's Name",
                         style: TextStyle(
@@ -159,7 +161,7 @@ class _PetProfileState extends State<PetProfile> {
                         fillColor: Colors.blue[50],
                         hintText: "Enter Pet's Name",
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -180,10 +182,12 @@ class _PetProfileState extends State<PetProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.beenhere_rounded,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Breed",
                         style: TextStyle(
@@ -211,9 +215,9 @@ class _PetProfileState extends State<PetProfile> {
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.blue[50],
-                        hintText: 'Enter Breed',
+                        hintText: "Enter Pet's Breed",
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -234,10 +238,12 @@ class _PetProfileState extends State<PetProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.calendar_month,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Age",
                         style: TextStyle(
@@ -265,9 +271,9 @@ class _PetProfileState extends State<PetProfile> {
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.blue[50],
-                        hintText: 'Enter Age',
+                        hintText: "Enter Pet's Age",
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -288,10 +294,12 @@ class _PetProfileState extends State<PetProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.balance,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Weight",
                         style: TextStyle(
@@ -319,9 +327,9 @@ class _PetProfileState extends State<PetProfile> {
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.blue[50],
-                        hintText: 'Enter Weight',
+                        hintText: "Enter Pet's Weight",
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -342,10 +350,12 @@ class _PetProfileState extends State<PetProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.arrow_upward_sharp,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
                         "Hight",
                         style: TextStyle(
@@ -373,9 +383,9 @@ class _PetProfileState extends State<PetProfile> {
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.blue[50],
-                        hintText: 'Enter Hight',
+                        hintText: "Enter Pet's Hight",
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
@@ -395,12 +405,14 @@ class _PetProfileState extends State<PetProfile> {
                   ),
                   child: Row(
                     children: [
+                      SizedBox(width: 10.0),
                       Icon(
-                        Icons.man,
+                        Icons.girl_outlined,
                         color: Colors.white,
                       ),
+                      SizedBox(width: 10.0),
                       Text(
-                        "Grnder",
+                        "Gender",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -426,9 +438,9 @@ class _PetProfileState extends State<PetProfile> {
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.blue[50],
-                        hintText: 'Enter Gender',
+                        hintText: "Enter Pet's Gender",
                         contentPadding: const EdgeInsets.only(
-                            left: 14.0, bottom: 8.0, top: 8.0),
+                            left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.purple),
                           borderRadius: BorderRadius.circular(20),
