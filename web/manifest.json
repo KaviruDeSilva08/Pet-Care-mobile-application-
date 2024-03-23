@@ -1,6 +1,6 @@
 {
-    "name": "pet_care",
-    "short_name": "pet_care",
+    "name": "furfriend",
+    "short_name": "furfriend",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
