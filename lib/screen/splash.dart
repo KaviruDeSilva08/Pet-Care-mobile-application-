@@ -6,6 +6,7 @@ import 'package:pet_care/screen/loding.dart';
 //import '../../report/main.dart';
 
 class Splash extends StatefulWidget {
+  // ignore: use_super_parameters
   const Splash({Key? key, required String title}) : super(key: key);
 
   @override

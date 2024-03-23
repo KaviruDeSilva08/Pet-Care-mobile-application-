@@ -7,9 +7,11 @@ import 'package:pet_care/screen/register.dart';
 //import 'main.dart';
 
 class Loding extends StatefulWidget {
+  // ignore: use_super_parameters
   const Loding({Key? key, required String title}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _LodingState createState() => _LodingState();
 }
 

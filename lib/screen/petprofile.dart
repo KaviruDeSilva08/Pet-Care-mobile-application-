@@ -7,6 +7,7 @@ class PetProfile extends StatefulWidget {
   const PetProfile({super.key, required String title});
 
   @override
+  // ignore: library_private_types_in_public_api
   _PetProfileState createState() => _PetProfileState();
 }
 
@@ -47,6 +48,7 @@ class _PetProfileState extends State<PetProfile> {
     _genderEditingController.clear();
 
     Navigator.push(
+      // ignore: use_build_context_synchronously
       context,
       MaterialPageRoute(builder: (context) => const PetSuccess()),
     );
