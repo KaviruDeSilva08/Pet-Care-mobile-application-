@@ -2,8 +2,9 @@
 
 import 'dart:async'; // Import the async library for Timer
 import 'package:flutter/material.dart';
-import 'package:furfriend/Splash.dart';
-import 'main.dart';
+//import 'package:furfriend/Splash.dart';
+import 'package:pet_care/screen/register.dart';
+//import 'main.dart';
 
 class Loding extends StatefulWidget {
   const Loding({Key? key, required String title}) : super(key: key);
@@ -39,7 +40,7 @@ class _LodingState extends State<Loding> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => const MyHomePage(
+        builder: (context) => const Register(
           title: 'GFG',
         ),
       ),
@@ -53,7 +54,7 @@ class _LodingState extends State<Loding> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/background.jpg'), // Replace with your background image path
+                'assets/images/background.jpg'), // Replace with your background image path
             fit: BoxFit.cover,
           ),
         ),
@@ -62,9 +63,9 @@ class _LodingState extends State<Loding> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/logo .png',
-                width: 300,
-                height: 300,
+                'assets/images/logo.png',
+                width: 250,
+                height: 250,
               ),
               SizedBox(
                   height:

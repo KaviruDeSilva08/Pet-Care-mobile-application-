@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:pet_care/screen/dashboard.dart';
+//import 'package:pet_care/screen/Loding.dart';
+import 'package:pet_care/screen/Splash.dart';
+//import 'package:pet_care/screen/dashboard.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -18,7 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Dashboard(),
+      home: Splash(
+        title: 'GFG',
+      ),
     );
   }
 }

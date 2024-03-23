@@ -1,11 +1,12 @@
 // ignore_for_file: file_names, library_private_types_in_public_api, use_build_context_synchronously, prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
-import 'package:furfriend/Loding.dart';
-import 'main.dart';
+//import 'package:furfriend/Loding.dart';
+import 'package:pet_care/screen/loding.dart';
+//import '../../report/main.dart';
 
 class Splash extends StatefulWidget {
-  const Splash({Key? key}) : super(key: key);
+  const Splash({Key? key, required String title}) : super(key: key);
 
   @override
   _SplashState createState() => _SplashState();
@@ -37,7 +38,7 @@ class _SplashState extends State<Splash> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/background.jpg'), // Replace with your background image path
+                'assets/images/background.jpg'), // Replace with your background image path
             fit: BoxFit.cover,
           ),
         ),
@@ -46,7 +47,7 @@ class _SplashState extends State<Splash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/logo .png',
+                'assets/images/logo.png',
                 width: 300,
                 height: 300,
               ),
