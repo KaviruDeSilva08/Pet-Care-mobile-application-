@@ -126,7 +126,9 @@ class Register extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const PetProfile()),
+                              builder: (context) => const PetProfile(
+                                    title: 'GFG',
+                                  )),
                         );
                       },
                       child: Row(
@@ -136,7 +138,7 @@ class Register extends StatelessWidget {
                             color: Colors.white,
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 17,
                           ),
                           Text(
                             'Create Pet Profile',
@@ -147,7 +149,7 @@ class Register extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 17,
                           ),
                           Icon(
                             Icons.arrow_circle_right,

@@ -386,40 +386,6 @@ class _UserProfileState extends State<UserProfile> {
                     ),
                   ),
                 ),
-                //
-                //
-                // SizedBox(height: 20.0),
-                // TextField(
-                //   controller: _emailEditingController,
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     hintText: 'Email',
-                //   ),
-                // ),
-                // SizedBox(height: 20.0),
-                // TextField(
-                //   controller: _numberEditingController,
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     hintText: 'Number',
-                //   ),
-                // ),
-                // SizedBox(height: 20.0),
-                // TextField(
-                //   controller: _passwordEditingController,
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     hintText: 'Password',
-                //   ),
-                // ),
-                // SizedBox(height: 20.0),
-                // TextField(
-                //   controller: _cpasswordEditingController,
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     hintText: 'C Password',
-                //   ),
-                // ),
                 SizedBox(height: 20.0),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
