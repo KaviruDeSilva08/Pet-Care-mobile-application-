@@ -173,7 +173,7 @@ class Dashboard extends StatelessWidget {
                             width: 10,
                           ),
                           Text(
-                            'Health Checker',
+                            'Nourish & Care',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 26,
@@ -189,43 +189,8 @@ class Dashboard extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SizedBox(
-                    width: 320,
-                    height: 55,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Color.fromARGB(255, 18, 76, 135),
-                      ),
-                      onPressed: () {},
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.food_bank,
-                            color: Colors.white,
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            'Feeding Schedules',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 26,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -339,7 +304,7 @@ class Dashboard extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 50,
               ),
               SizedBox(height: 10.0),
               Padding(
@@ -392,7 +357,7 @@ class Dashboard extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 200,
+                height: 300,
               )
             ],
           ),
