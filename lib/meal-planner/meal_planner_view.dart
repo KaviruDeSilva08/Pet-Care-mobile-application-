@@ -384,7 +384,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                "Find Something to Eat",
+                "Find Something to Give",
                 style: TextStyle(
                     color: TColor.black,
                     fontSize: 16,
