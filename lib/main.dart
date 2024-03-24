@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-//import 'package:pet_care/screen/Loding.dart';
 import 'package:pet_care/screen/Splash.dart';
-//import 'package:pet_care/screen/dashboard.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {

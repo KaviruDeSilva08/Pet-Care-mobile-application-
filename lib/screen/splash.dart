@@ -1,15 +1,12 @@
-// ignore_for_file: file_names, library_private_types_in_public_api, use_build_context_synchronously, prefer_const_constructors, unused_import
-
 import 'package:flutter/material.dart';
-//import 'package:furfriend/Loding.dart';
 import 'package:pet_care/screen/loding.dart';
-//import '../../report/main.dart';
 
 class Splash extends StatefulWidget {
   // ignore: use_super_parameters
   const Splash({Key? key, required String title}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _SplashState createState() => _SplashState();
 }
 
@@ -23,6 +20,7 @@ class _SplashState extends State<Splash> {
   _navigateToHome() async {
     await Future.delayed(const Duration(milliseconds: 3000));
     Navigator.pushReplacement(
+      // ignore: use_build_context_synchronously
       context,
       MaterialPageRoute(
         builder: (context) => const Loding(

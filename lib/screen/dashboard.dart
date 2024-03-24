@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pet_care/screen/register.dart';
-//import 'package:pet_care/screen/register.dart';
+import 'package:pet_care/screen/signinpage.dart';
 
 class Dashboard extends StatelessWidget {
-  const Dashboard({super.key});
+  const Dashboard({super.key, required String title});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class Dashboard extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Register(
+                              builder: (context) => const SigninPage(
                                     title: 'GFG',
                                   )),
                         );
@@ -393,7 +392,7 @@ class Dashboard extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 50,
+                height: 200,
               )
             ],
           ),

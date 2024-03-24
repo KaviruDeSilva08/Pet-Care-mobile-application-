@@ -128,7 +128,7 @@ class PetSuccess extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 200,
+                  height: 400,
                 ),
               ],
             ),

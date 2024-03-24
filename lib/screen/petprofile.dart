@@ -17,7 +17,8 @@ class _PetProfileState extends State<PetProfile> {
   final TextEditingController _ageEditingController = TextEditingController();
   final TextEditingController _weightEditingController =
       TextEditingController();
-  final TextEditingController _hightEditingController = TextEditingController();
+  final TextEditingController _heightEditingController =
+      TextEditingController();
   final TextEditingController _genderEditingController =
       TextEditingController();
   late CollectionReference _collectionReference;
@@ -35,7 +36,7 @@ class _PetProfileState extends State<PetProfile> {
         'breed': _breedEditingController.text,
         'age': _ageEditingController.text,
         'weight': _weightEditingController.text,
-        'hight': _hightEditingController.text,
+        'height': _heightEditingController.text,
         'gender': _genderEditingController.text,
       },
     );
@@ -44,7 +45,7 @@ class _PetProfileState extends State<PetProfile> {
     _breedEditingController.clear();
     _ageEditingController.clear();
     _weightEditingController.clear();
-    _hightEditingController.clear();
+    _heightEditingController.clear();
     _genderEditingController.clear();
 
     Navigator.push(
@@ -359,7 +360,7 @@ class _PetProfileState extends State<PetProfile> {
                       ),
                       SizedBox(width: 10.0),
                       Text(
-                        "Hight",
+                        "Height",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -381,11 +382,11 @@ class _PetProfileState extends State<PetProfile> {
                         fontSize: 18.0,
                         color: Colors.black,
                       ),
-                      controller: _hightEditingController,
+                      controller: _heightEditingController,
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.blue[50],
-                        hintText: "Enter Pet's Hight",
+                        hintText: "Enter Pet's Height",
                         contentPadding: const EdgeInsets.only(
                             left: 25, bottom: 8.0, top: 8.0),
                         focusedBorder: OutlineInputBorder(

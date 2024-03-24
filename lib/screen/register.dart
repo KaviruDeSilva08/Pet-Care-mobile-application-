@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pet_care/screen/dashboard.dart';
 import 'package:pet_care/screen/petprofile.dart';
+import 'package:pet_care/screen/signinpage.dart';
 import 'package:pet_care/screen/userprofile.dart';
 
 class Register extends StatelessWidget {
@@ -36,7 +36,9 @@ class Register extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const Dashboard()),
+                            builder: (context) => const SigninPage(
+                                  title: 'GFG',
+                                )),
                       );
                     },
                     child: Icon(

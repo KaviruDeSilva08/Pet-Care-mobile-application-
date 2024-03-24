@@ -1,10 +1,6 @@
-// ignore_for_file: unused_import
-
 import 'dart:async'; // Import the async library for Timer
 import 'package:flutter/material.dart';
-//import 'package:furfriend/Splash.dart';
-import 'package:pet_care/screen/register.dart';
-//import 'main.dart';
+import 'package:pet_care/screen/signinpage.dart';
 
 class Loding extends StatefulWidget {
   // ignore: use_super_parameters
@@ -42,7 +38,7 @@ class _LodingState extends State<Loding> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => const Register(
+        builder: (context) => const SigninPage(
           title: 'GFG',
         ),
       ),
@@ -69,16 +65,21 @@ class _LodingState extends State<Loding> {
                 width: 300,
                 height: 300,
               ),
-              SizedBox(
-                  height:
-                      10), // Add some space between the logo and the loading bar
-              LinearProgressIndicator(
-                value: _progress, // Set the value of the progress indicator
-                backgroundColor: Color.fromARGB(
-                    180, 176, 194, 213), // Set the background color
-                minHeight: 15.0,
-                valueColor: AlwaysStoppedAnimation<Color>(const Color.fromARGB(
-                    255, 34, 88, 143)), // Set the progress color
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 70,
+                  right: 70,
+                ),
+                child: LinearProgressIndicator(
+                  value: _progress, // Set the value of the progress indicator
+                  backgroundColor: Color.fromARGB(
+                      180, 176, 194, 213), // Set the background color
+                  minHeight: 15.0,
+                  borderRadius: BorderRadius.circular(30),
+                  valueColor: AlwaysStoppedAnimation<Color>(
+                      const Color.fromARGB(
+                          255, 34, 88, 143)), // Set the progress color
+                ),
               ),
             ],
           ),
